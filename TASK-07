@@ -1,0 +1,22 @@
+Task 7: Festival Sale Discount Calculator:
+
+#include <stdio.h>
+int main() {
+    float totalAmount, finalAmount;
+    float discount;
+    printf("Enter total purchase amount: ");
+    scanf("%f", &totalAmount);
+    if (totalAmount >= 5000) {
+        discount = 0.20;  
+    } 
+    else if (totalAmount >= 3000) {
+        discount = 0.10;  
+    } 
+    else {
+        discount = 0.0;   
+    }
+    finalAmount = totalAmount * (1 - discount);
+    printf("Discount applied: %.0f%%\n", discount * 100);
+    printf("Amount to pay after discount: %.2f\n", finalAmount);
+    return 0;
+}
