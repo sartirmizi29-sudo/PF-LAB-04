@@ -1,0 +1,22 @@
+Task 3: Bank Account Balance Status:
+
+#include <stdio.h>
+int main() {
+	int balance;
+	printf("Enter Account Balance: ");
+	scanf("%d" , & balance );
+	
+	if(balance>0)
+	{
+		printf("Positive Balance: ");
+	}
+	else if (balance==0)
+	{
+		printf("Zero Balance: ");
+	}
+	else if (balance<0)
+	{
+		printf ("Overdrawn: ");
+	}
+	return 0;
+}
